@@ -24,5 +24,6 @@ func ConnectDb() {
 	}
 
 	log.Println("Connected to database successfully")
-	db.Logger = logger.Default.LogMode(logger.Silent)
+	db.Logger = logger.Default.LogMode(logger.Info)
+	log.Println("Running Migrations")
 }
